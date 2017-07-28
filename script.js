@@ -23,22 +23,28 @@ return numbers[3];
 2. Iterate over the "numbers" array. Push any numbers less than 10 onto "smallNums". Return "smallNums".
 */
 function smallNums(){
-    let smallNums = [];
+let smallNums = "";
     // Your answer here:
-    //for( let i = 0 ; i < 10 ; i++ ){
-      //if (numbers[i] < 10);
-      //smallNums.push (numbers[i]);
+for ( let i = 0 ; i < 10 ; i++ ){
+    if( smallNums[ i ] < 10){
+        smallNums[ i ] = ""
+    }
+
 }
+
 return smallNums;
+
 }
+
+
 /*
 3. Add 12, 99, and 101 (in that order) to the end of the "numbers" array. Return the "numbers" array.
 */
 function addNums(){
-    // Your answer here:
-    numbers.pop [ 12, 99, 101 ];{
+    // Your answer here
+numbers.push( 12, 99, 101 );
 
-    }
+
 
 return numbers;
 }
@@ -64,25 +70,28 @@ let film = {
 */
 function addBoxOffice(){
     // Your answer here:
-    film.boxoffice = 269061
-}
-    return film;
+film.boxoffice = 269061;
 
+    return film;
+}
 /*
 5. Add the name "Yukiko Shimazaki" to the "actors" array. Return "film";
 */
 function addActor(){
     // Your answer here:
-    film.actor = "Yukiko Shimazaki"
-}
-return film;
+film.actors.push( "Yukiko Shimazaki" );
+
+    return film;
 }
 /*
 6. Now that you've added a "boxoffice" property, subtract "budget" from "property" and return the difference. This number is the amount lost by the studio in making the film. Return the loss.
 */
 function getLosses(){
     // Your answer here:
+
+
 }
+
 //
 
 
@@ -102,6 +111,10 @@ let letterVals = [ "v", "x", "r", "f", "p" ];
 function interleave(){
     let vals = [];
     // Your answer here:
+for ( let i = 0 ; i < 5 ; i++){
+  vals = letterVals + numberVals [i];
+}
+return vals;
 }
 
 
@@ -119,4 +132,10 @@ let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close"
 function union(){
     let same = [];
     // Your answer here:
+    for ( let i = 0 ; i < 8 ; i++){
+      if (first[i] = second[i]){
+        same.push ("")
+      }
+      return same;
+    }
 }
